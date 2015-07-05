@@ -6,12 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 export default Router.map(function() {
-  this.route("intro");
-  this.route("q1");
-  this.route("q2");
-  this.route("q3");
-  this.route("q4");
-  this.route("q5");
-  this.route("q6");
-  this.route("q7");
+  this.resource("questions",function(){
+    this.resource("question",{path:':id'});
+  });
 });

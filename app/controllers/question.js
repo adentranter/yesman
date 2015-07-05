@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-export default Ember.Mixin.create({
+export default Ember.Controller.extend({
   needs:['application'],
   actions: {
     add:function(points) {
